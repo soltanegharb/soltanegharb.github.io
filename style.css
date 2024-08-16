@@ -115,7 +115,6 @@ nav li a:hover {
 #success-message > p {
   background-color: #d4edda;
   color: #155724;
-  margin-top: 0px;
   padding: 1rem;
   border-radius: 0.25rem;
 }
