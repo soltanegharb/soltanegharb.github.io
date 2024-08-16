@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <img src="images/logo.jpg" alt="Logo of a dog's head" />
+    <h2>My Portfolio</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="hero">
+      <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+        assumenda, dolores odit cumque dignissimos aspernatur autem impedit
+        vitae omnis cum, sit esse mollitia iusto nam, facilis ad placeat
+        distinctio atque!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et vel
+        cupiditate id. Iure architecto iusto aliquid repellendus quaerat
+        adipisci nobis dicta repellat aut, sed quae harum repudiandae tempore
+        atque provident.
+      </p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="images/card1.jpg" alt="Beach photo">
+          <p class="card-title">Beach Project</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            assumenda, dolores odit cumque ...
+          </p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <img src="images/card2.jpg" alt="Dog fetching stick in ocean">
+          <p class="card-title">Dog Project</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            assumenda, dolores odit cumque ...
+          </p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <img src="images/card3.jpg" alt="Mountains in background of lake">
+          <p class="card-title">Lake Project</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            assumenda, dolores odit cumque ...
+          </p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="b6ee26a0-04ad-4de0-9556-26b93fa4f857">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <label>Age:
+          <input type="number" max="100" title="Must be less than 100" name="age" required>
+        </label>
+        <p>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea name="message" id="message"cols=50 rows="5"  required></textarea>
+        </p>
+        <p>
+          <input type="submit">
+        </p>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+        <!-- Custom Confirmation / Success Page -->
+        <input type="hidden" name="redirect" value="https://mywebsite.github.io/?reditect=true">
+         
+    </form>
+    </section>
+  </main>
+  <footer id="footer">
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</footer>
+<script>
+  
+</script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
