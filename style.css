@@ -102,7 +102,7 @@ gap: 20px;
 /* CONTACT SECTION */
 #success-message {
 display: flex;
-justify-content: center;
+justify-content:right;
 position: absolute;
 top: 20px;
 width: 100%;
