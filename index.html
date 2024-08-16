@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <div id="success-message" class="hidden">
+    <p>Thanks for reaching out!</p>
+  </div>
+
   <header id="header">
     <img src="images/logo.jpg" alt="Logo of a dog's head" />
     <h2>My Portfolio</h2>
@@ -119,7 +123,18 @@
   </nav>
 </footer>
 <script>
-  
+  window.onload = function(){
+    // check the url query string to see if the form was submitted
+    const urlParams = new URLSearchParams(window.location.search);
+    // if the form was submitted then show success message
+    if(urlParams.get("redirect") === "true"){
+      const successMessage = document.getElementById("success-message");
+      successMessage.classList.remove("hidden");
+      setTimeout(function(){
+        successMessage.classList.add("hidden");
+      }, 4000);
+    }
+  }
 </script>
 <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
