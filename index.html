@@ -103,9 +103,9 @@
         <p>
           <input type="submit">
         </p>
-    
-        <!-- Honeypot Spam Protection -->
-        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+        
+        <!-- hCaptcha Spam Protection -->
+        <div class="h-captcha" data-captcha="true"></div>
 
         <!-- Custom Confirmation / Success Page -->
         <input type="hidden" name="redirect" value="https://soltanegharb.github.io/?redirect=true">
@@ -136,6 +136,7 @@
     }
   }
 </script>
+<!-- Required for hCaptcha -->
 <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
