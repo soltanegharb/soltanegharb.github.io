@@ -105,7 +105,7 @@ nav li a:hover {
 
 /* CONTACT SECTION */
 #success-message {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 20px;
