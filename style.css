@@ -101,10 +101,10 @@ gap: 20px;
 
 /* CONTACT SECTION */
 #success-message {
-display: flex;
+display: inline-flex;
 justify-content:center;
 position:absolute;
-top: 0px;
+top: 20px;
 width: 100%;
 transition: opacity 0.5s ease-out;
 }
