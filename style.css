@@ -104,9 +104,15 @@ gap: 20px;
 display: flex;
 justify-content: center;
 position: absolute;
+top: 20px;
+width: 100px;
+transition: opacity 0.5s ease-out;
 }
 #success-message > p {
-
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 0.25rem;
 }
 
 
