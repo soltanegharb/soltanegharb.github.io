@@ -103,8 +103,8 @@ gap: 20px;
 #success-message {
 display: flex;
 justify-content:center;
-position:static;
-top: 20px;
+position:absolute;
+top: 0px;
 width: 100%;
 transition: opacity 0.5s ease-out;
 }
